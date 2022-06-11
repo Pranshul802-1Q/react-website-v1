@@ -8,7 +8,8 @@
 .home,
 .services,
 .products,
-.sign-up {
+.sign-up 
+.video{
   display: flex;
   height: 90vh;
   align-items: center;
@@ -25,7 +26,7 @@
   font-size: 100px;
 }
 
-.products {
+.projects {
   background-image: url('/images/img-1.jpg');
   background-position: center;
   background-size: fill;
@@ -42,3 +43,91 @@
   color: #fff;
   font-size: 100px;
 }
+
+.video {
+  background-image: url('/images/field.webp');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+.doc-container{
+  background-image: url('/images/gradient-blur.jpg');
+  
+  width: 100%;
+  height:5000px;
+  background-repeat:repeat-y;
+}
+.image-holder{
+  height:80vh;
+  width:90%;
+  padding-top:5%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+ 
+}
+
+.text-area{
+  padding-left: 150px;
+  padding-top:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.slider{
+  padding-top:5%;
+  position: relative;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width:100%;
+  height:90vh;
+  border-radius: 10px;
+}
+
+.right-arrow{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: black;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide{
+  opacity: 0;
+  transition-duration: 1s;
+  }
+
+  .slide.active{
+    opacity:1;
+    transition-duration: 2s;
+    transform:scale(1.08);
+  }
+
+  .spacer{
+    height: 200px;
+    width: 100%;
+    background-color:gray;
+  }
