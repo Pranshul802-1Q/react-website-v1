@@ -13,15 +13,15 @@ function HeroSection() {
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
      
-        <Button
+        {/* <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
           
         >
           GET STARTED
-        </Button>
-        <Link to="/video">
+        </Button>*/}
+        <Link to="/video"> 
         <Button
           className='btns'
           buttonStyle='btn--primary'

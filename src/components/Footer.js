@@ -1,9 +1,42 @@
-import React from 'react';
+import React,{ useRef } from 'react';
 import './Footer.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
+import emailjs, {init} from '@emailjs/browser';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function Footer() {
+  const form=useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    var templateParams = {
+      email: form.email
+  };
+    emailjs.sendForm("service_y9y8lgt","template_p8583wk",form.current,"6SP5uInQB7dnoUkIV").then(
+      (result) => {
+        alert("Message Sent Successfully");
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+  
   return (
     <div className='footer-container'>
       <section className='footer-subscription'>
@@ -14,15 +47,17 @@ function Footer() {
           You will see the change it brings about
         </p>
         <div className='input-areas'>
-          <form>
-            <input
+          <form  onSubmit={handleSubmit}  ref={form}>
+            <input id='email'
               className='footer-input'
               name='email'
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button type={'submit'}
+	 buttonStyle='btn--outline'>Subscribe</Button>
           </form>
+          
         </div>
       </section>
       <div class='footer-links'>
@@ -63,20 +98,38 @@ function Footer() {
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/Home' className='social-logo'>
+            <Link to='/' className='social-logo'>
               Organic Village
               <i class='fab fa-typo3' />
             </Link>
           </div>
           <small class='website-rights'>OrganicVillage © 2022</small>
           <div class='social-icons'>
-            <Link
+            <a   href="javascript:void (window.open('https://www.facebook.com/pranshul.thapliyal','_blank'))">
+              <img src='/images/facebook.png' width="40" height="40"></img>
+            </a>
+
+            <a   href="javascript:void (window.open('https://www.instagram.com/pranshuldj/','_blank'))">
+              <img src='/images/instagram.png' width="40" height="40"></img>
+            </a>
+
+            <a   href="javascript:void (window.open('https://www.youtube.com/channel/UCoLCRv10lfC10ewgB1beRhQ','_blank'))">
+              <img src='/images/youtube.png' width="40" height="40"></img>
+            </a>
+
+            <a   href="javascript:void (window.open('https://www.linkedin.com/in/pranshul-thapliyal-21320a212/','_blank'))">
+              <img src='/images/linkedin.png' width="40" height="40"></img>
+            </a>
+          
+            {/* <Link
               class='social-icon-link facebook'
               to='/'
               target='_blank'
               aria-label='Facebook'
             >
+              
               <i class='fab fa-facebook-f' />
+             
             </Link>
             <Link
               class='social-icon-link instagram'
@@ -109,12 +162,17 @@ function Footer() {
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
     </div>
+    
   );
 }
+
+
+
+
 
 export default Footer;

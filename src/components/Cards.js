@@ -16,30 +16,30 @@ function Cards() {
               path='/rishikesh'
             />
             <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
+              src='images/farm-dehradun.jpg'
+              text='Organic World, Dehradun'
+              label='Eatables'
               path='/dehradun'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
-              path='/services'
+              src='images/farm-chakrata.jpg'
+              text='Compost Heaven, Chakrata'
+              label='Eatables'
+              path='/Chakrata'
             />
             <CardItem
-              src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/products'
+              src='images/farm-tiyuni.jpg'
+              text="Organic Farmers' Amity, Tiyuni"
+              label='Crop'
+              path='/Uttarkashi'
             />
             <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
+              src='images/farm-uttarkashi.jpg'
+              text='Jaivik Garden, Uttarkashi'
+              label='Medicinal'
+              path='/Tiyui'
             />
           </ul>
         </div>
