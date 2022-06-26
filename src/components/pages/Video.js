@@ -6,7 +6,7 @@ export default video;
 function video() {
     return (
     <div >
-    <video src='/videos/video-2.mp4' autoPlay loop muted />
+    <video src='/videos/video-2-1.mp4' autoPlay loop muted />
     
     </div>);
   }
