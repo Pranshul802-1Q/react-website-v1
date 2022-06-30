@@ -47,12 +47,12 @@ function Tiyuni() {
                   
                   </div>
                   
-                  <img id='pageimg' src='/images/doodle.jpg' alt='disp'></img>
+                  <img id='pageimg' src='/images/container-8.jpg' alt='disp'></img>
                  
           </div>
 
           <div className='holder'>
-          <img id='pageimg' src='/images/doodle.jpg' alt='disp'></img>
+          <img id='pageimg' src='/images/container-10.jpg' alt='disp'></img>
             <div className='textspace'>
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text.
                It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.

@@ -39,7 +39,7 @@ function Cards() {
               src='images/farm-uttarkashi.jpg'
               text='Jaivik Garden, Uttarkashi'
               label='Medicinal'
-              path='/Tiyui'
+              path='/Tiyuni'
             />
           </ul>
         </div>

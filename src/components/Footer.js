@@ -7,25 +7,11 @@ import emailjs, {init} from '@emailjs/browser';
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 function Footer() {
   const form=useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
-    var templateParams = {
-      email: form.email
-  };
+    
     emailjs.sendForm("service_y9y8lgt","template_p8583wk",form.current,"6SP5uInQB7dnoUkIV").then(
       (result) => {
         alert("Message Sent Successfully");
@@ -62,37 +48,38 @@ function Footer() {
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
+          
           <div class='footer-link-items'>
-            {/* <h2>About Us</h2> */}
+            
             <Link to='/video'>About Us</Link>
-            {/* <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link> */}
+            <p>32nd Avenue
+               Park Street<br/>
+               Mussoorie, Uttarakhand<br/>
+               P.O Box Barlowganj<br/>
+               248122.<br/>
+               8 Branches across Uttarakhand.
+            </p>
+           
           </div>
           <div class='footer-link-items'>
-            {/* <h2>Contact Us</h2> */}
+            
             <Link to='/video'>Contact US</Link>
-            {/* <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link> */}
+            <div class='link-items-child'>
+              <img class='footer-link-img' src='/images/mail.png'></img>  
+              <p> organicvillage@gmail.com</p>
+            </div>
+            <div class='link-items-child'>
+              <img class='footer-link-img' src='/images/phone.png'></img>  
+              <p> +91-9557998452</p>
+            </div>
+            <div class='link-items-child'>
+              <img class='footer-link-img' src='/images/whatsapp-121.png'></img>  
+              <p> +91-7351792559</p>
+            </div>
+           
           </div>
-        </div>
-        <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
-            {/* <h2>Videos</h2> */}
-            <Link to='/video'>Submit Video</Link>
-            {/* <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link> */}
-          </div>
-          {/* <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-          </div> */}
+       
+       
         </div>
       </div>
       <section class='social-media'>
@@ -121,48 +108,7 @@ function Footer() {
               <img src='/images/linkedin.png' width="40" height="40"></img>
             </a>
           
-            {/* <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              
-              <i class='fab fa-facebook-f' />
              
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link> */}
           </div>
         </div>
       </section>
