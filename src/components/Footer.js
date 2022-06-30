@@ -14,7 +14,8 @@ function Footer() {
     
     emailjs.sendForm("service_y9y8lgt","template_p8583wk",form.current,"6SP5uInQB7dnoUkIV").then(
       (result) => {
-        alert("Message Sent Successfully");
+        // alert("Message Sent Successfully");
+        document.getElementById("message").innerText = "Thanl You for Subscribing";
         console.log(result.text);
       },
       (error) => {
@@ -45,6 +46,8 @@ function Footer() {
           </form>
           
         </div>
+
+        <div><h3 id="message"></h3></div>
       </section>
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
